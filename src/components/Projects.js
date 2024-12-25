@@ -12,6 +12,9 @@ import projImg9 from "../assets/img/project-9.png";
 import projImg10 from "../assets/img/project-10.png";
 import projImg11 from "../assets/img/project-11.png";
 import projImg12 from "../assets/img/project-12.png";
+import projImg13 from "../assets/img/project-13.png";
+import projImg14 from "../assets/img/project-14.png";
+import projImg15 from "../assets/img/project-15.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -20,10 +23,16 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Email Validator",
-      description: "A tool to validate email addresses, ensuring legitimate communications and reducing bounce rates.",
-      imgUrl: projImg1,
-      demoLink: "https://github.com/Umang228/Email-Validator",
+      title: "Face Detection",
+      description: "A project to show face detection and face landmark in next.js",
+      imgUrl: projImg13,
+      demoLink: "https://github.com/Umang228/face-detection",
+    },
+    {
+      title: "Code-Ant-AI",
+      description: "A project to copy the frontend of Code-Ant-AI",
+      imgUrl: projImg14,
+      demoLink: "https://github.com/Umang228/CodeAntAI",
     },
     {
       title: "WeatherNow",
@@ -32,16 +41,40 @@ export const Projects = () => {
       demoLink: "https://github.com/Umang228/-WeatherNow--Real-time-Weather-Information-App",
     },
     {
+      title: "Music Player",
+      description: "A responsive and customizable music player application, supporting various audio formats for seamless playback",
+      imgUrl: projImg4,
+      demoLink: "https://github.com/Umang228/music-player",
+    },
+    {
       title: "Todo",
       description: "A simple task management application for organizing and tracking daily to-dos with a clean, user-friendly interface",
       imgUrl: projImg3,
       demoLink: "https://github.com/Umang228/Todo",
     },
     {
-      title: "Music Player",
-      description: "A responsive and customizable music player application, supporting various audio formats for seamless playback",
-      imgUrl: projImg4,
-      demoLink: "https://github.com/Umang228/music-player",
+      title: "Pdf Reader",
+      description: "A project to fetch pdf data from external API and then allowing the user to read the pdf",
+      imgUrl: projImg15,
+      demoLink: "https://github.com/Umang228/pdf-reader",
+    },
+    {
+      title: "Raindrop Pattern",
+      description: "A creative visual effect using CSS, simulating raindrop patterns on the screen for a dynamic and engaging design",
+      imgUrl: projImg10,
+      demoLink: "https://github.com/Umang228/raindrop-grid",
+    },
+    {
+      title: "Google Authentication",
+      description: "A secure authentication system integrated with Google sign-in, enabling users to log in using their Google credentials",
+      imgUrl: projImg11,
+      demoLink: "https://github.com/Umang228/Login-with-google",
+    },
+    {
+      title: "Email Validator",
+      description: "A tool to validate email addresses, ensuring legitimate communications and reducing bounce rates.",
+      imgUrl: projImg1,
+      demoLink: "https://github.com/Umang228/Email-Validator",
     },
     {
       title: "Cart-Zone",
@@ -74,18 +107,6 @@ export const Projects = () => {
       demoLink: "https://github.com/Umang228/Nextjs-Admin-template",
     },
     {
-      title: "Raindrop Pattern",
-      description: "A creative visual effect using CSS, simulating raindrop patterns on the screen for a dynamic and engaging design",
-      imgUrl: projImg10,
-      demoLink: "https://github.com/Umang228/raindrop-grid",
-    },
-    {
-      title: "Google Authentication",
-      description: "A secure authentication system integrated with Google sign-in, enabling users to log in using their Google credentials",
-      imgUrl: projImg11,
-      demoLink: "https://github.com/Umang228/Login-with-google",
-    },
-    {
       title: "User Management",
       description: "A user management system for handling user profiles, roles, and permissions, providing a streamlined admin experience.",
       imgUrl: projImg12,
@@ -116,7 +137,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          projects.slice(0, 6).map((project, index) => {
+                          projects.slice(0, 9).map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -130,7 +151,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="second">
                       <Row>
                         {
-                          projects.slice(6, 12).map((project, index) => {
+                          projects.slice(9, 15).map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
